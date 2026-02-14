@@ -1,0 +1,36 @@
+# Node modules
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Build output
+dist/
+build/
+
+# Kubernetes temporary files
+*.tmp
+
+# Docker
+docker-compose.override.yml
+
+# Coverage
+coverage/
+
+# Optional lock for local experimentation
+*.log
