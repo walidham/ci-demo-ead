@@ -26,10 +26,11 @@ jobs:
             # Verify Node.js and npm are available
             echo "✓ Node version: $(node --version)"
             echo "✓ NPM version: $(npm --version)"
-            
+
             cd ~/ci-demo
             echo "📥 Pulling latest code..."
             git reset --hard
             git pull origin main
             npm install
-            npm start
+            sudo fuser -k 80/tcp || true
+            nohup npm start > output.log 2>&1 &
